@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.desktop{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    color: white;
+}
+.desktop img{
+    height: 40px;
+    padding-top:15px;
+}
+
+.taskbar{
+    background-color:#f3f3f39d ;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+.taskbar img{
+    height: 30px;
+    padding-right: 8px;
+}
+.taskbar .right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+}
+
+/*start and startmenu*/
+.start{
+    width: 80vh;
+    height: 80vh;
+    position: fixed; 
+    left: 50%;
+    top: 140%;
+    transform: translate(-50%, -45%);
+    text-align: center;
+    border-radius: 8px;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.637) ;
+    transition: all 0.3s ease;
+    
+}
+.start .startmenu{
+    display: grid;
+    grid-template-rows: 80px 80px  ;
+    grid-template-columns: 80px 80px 80px 80px 80px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.startmenu a img{
+    height: 30px ;
+    padding: 20px;
+}
+
+.start .other{
+    display: grid;
+    grid-template-rows: 80px 80px  ;
+    grid-template-columns: 230px 230px ;
+    align-items: center;
+    justify-content: left; 
+    padding-left: 20px;
+}
+
+.other a img{
+    height: 30px ;
+    padding: 20px;
+}
+
+
+/*for more*/
+.item{
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.685);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.685);
+    text-align:center ;
+    border-radius: 5px;
+    width: 70px;
+    justify-self: end;
+    text-decoration: none;
+    color: black;
+}
+
+.other span .fas{
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.other div{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+/*myprofile*/
+.start .myprofile{
+    display: grid;
+}
+
+.myprofile a {
+    text-decoration: none;
+    color: black;
+    padding: 18px;
+    font-size: 18px;
+    justify-self: left;
+}
+.myprofile i{
+    padding-right: 5px;
+    color: rgba(0, 0, 0, 0.541);
+}
+.myprofile .fa{
+    padding-left: 350px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Windows 11</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/ebc46c8cd2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="desktop">
+        <figure><a href=""></a><img src="This_PC.png" alt=""></a><figcaption>This PC</figcaption></figure>
+        <figure><a href=""><img src="recyclebinicon.png" alt=""></a><figcaption>Recycle<br>Bin</figcaption></figure>
+        <figure><a href=""><img src="Control_Panel_icon.png" alt=""></a><figcaption>Control<br>Panel</figcaption></figure>
+        <figure><a href="https://www.google.com/"><img src="chromeicon.png" alt=""></a><figcaption>Chrome</figcaption></figure>
+        <figure><a href=""><img src="avast-free-antivirus-icon.png" alt=""></a><figcaption>Avast Free<br>Antivirus</figcaption></figure>
+    </div>
+    
+    <div class="taskbar">
+        <img src="favicon.png" alt="" class="windows">
+        <img src="Control_Panel_icon.png" alt="">
+        <img src="file-explorer-icon.png" alt="">
+        <img src="groove-music.png" alt="">
+        <img src="recyclebinicon.png" alt="">
+        <img src="microsoftedge.png" alt="">
+        <img class="right" src="taskbarright.PNG" alt="">
+    </div>
+
+    <div class="start">
+        <div class="startmenu">
+            <a href="https://www.google.com/"><img src="microsoftedge.png" alt=""></a>
+            <a href="mailto:" target="_blank"><img src="Mail.png" alt=""></a>
+            <a href="https://www.timeanddate.com/calendar/" target="_blank"><img src="windows-calendar.png" alt=""></a>
+            <a href="https://www.microsoft.com/en-in/store/apps/windows"target="_blank"><img src="microsoft-store.png" alt=""></a>
+            <a href=""><img src="Photos-new-icon.png" alt=""></a>
+            <a href=""><img src="settingicon.png" alt=""></a>
+            <a href="https://www.google.com/search?q=google+calculator" target="_blank"><img src="caculatoricon.png" alt=""></a>
+            <a href=""><img src="alarms-fluent-icon.png" alt=""></a>
+            <a href="https://www.rapidtables.com/tools/notepad.html" target="_blank"><img src="Notepad.png" alt=""></a>
+            <a href="https://jspaint.app/"target="_blank"><img src="paint.png" alt=""></a>
+            <a href=""><img src="file-explorer-icon.png" alt=""></a>
+            <a href=""><img src="tips.png" alt=""></a>
+        </div>
+
+        <div class="other">
+            <h4 class="item1">Recommended</h4>
+            <span class="item">More<i class="fas fa-greater-than"></i></span>
+            <div class="item3">
+                <a href=""><img src="video_editor.jpg" alt=""></a>
+                <span>
+                    <h5>Video Editor</h5>
+                    <p>Recently added</p>
+                </span>
+            </div>
+            <div class="item4">
+                <a href=""><img src="command-prompt.png" alt=""></a>
+                <span>
+                    <h5>Command Prompt</h5>
+                    <p>Recently added</p>
+                </span>
+            </div>
+            <div class="item5">
+                <a href=""><img src="Visual_Studio_Code.png" alt=""></a>
+                <span>
+                    <h5>VS code</h5>
+                    <p>Recently added</p>
+                </span>
+            </div>
+            <div class="item6">
+                <a href=""><img src="nodejs.png" alt=""></a>
+                <span>
+                    <h5>Node.js</h5>
+                    <p>Recently added</p>
+                </span>
+            </div>
+            <div class="item7">
+                <a href=""><img src="imageicon.png" alt=""></a>
+                <span>
+                    <h5>Image</h5>
+                    <p>1hr ago</p>
+                </span>
+            </div>
+            <div class="item8">
+                <a href=""><img src="Jupyter_logo.png" alt=""></a>
+                <span>
+                    <h5>Jupyter Notebook</h5>
+                    <p>2hr ago</p>
+                </span>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="myprofile">
+            <a href=""><i class="fas fa-user-circle"></i>Ashutosh<i class="fa fa-power-off"></i></a>
+        </div>
+    </div>
+
+
+    <!---------Javascript for Menu----->
+    <script>
+
+        let windows = document.getElementsByClassName("windows")[0]
+        let start = document.getElementsByClassName("start")[0]
+
+        windows.addEventListener("click", () => {
+            console.log("clicked");
+            if (start.style.top == "50%") {
+                start.style.top = "140%"
+            }
+            else {
+                start.style.top = "50%"
+            }
+        })
+    </script>
+</body>
+
+</html>
